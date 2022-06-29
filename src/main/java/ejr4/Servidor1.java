@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Servidor1 implements IServidor{
     private String name;
-    private List<Usuario>listUsuario = new ArrayList<>();
+    private List<User>listUsuario = new ArrayList<>();
 
     public Servidor1(String name) {
         this.name = name;
@@ -13,13 +13,13 @@ public class Servidor1 implements IServidor{
 
 
     @Override
-    public void registrar(Usuario usuario) {
+    public void registrar(User usuario) {
         listUsuario.add(usuario);
     }
 
     @Override
-    public void login(Usuario usuario) {
-        System.out.println("El servidor 1 esta logeando a este usuario");
+    public void login(User usuario) {
+        System.out.println("el servidor 1 esta logueando");
         listUsuario.add(usuario);
     }
 }

@@ -1,10 +1,10 @@
 package ejr4;
 
-public class Usuario {
+public class User {
     private String nombre;
     private int numero;
 
-    public Usuario(String nombre, int numero) {
+    public User(String nombre, int numero) {
         this.nombre = nombre;
         this.numero = numero;
     }
@@ -18,9 +18,9 @@ public class Usuario {
     }
 
     public void showInfo(){
-        System.out.println("********INFORMACION********");
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Numero de usuario: " + numero);
+        System.out.println("informacion");
+        System.out.println("nombre: " + nombre);
+        System.out.println("numero de usuario: " + numero);
         System.out.println();
     }
 }
